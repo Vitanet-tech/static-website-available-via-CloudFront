@@ -2,9 +2,9 @@
 
 This repository contains screenshot on static website hosting deployed on AWS S3 and served via cloudfront, for udacity project.
 
-### The sample site is live at github page https://vitanet-tech.github.io/static-website-available-via-CloudFront/
+#### The sample site is live at github page https://vitanet-tech.github.io/static-website-available-via-CloudFront/
 
-## Steps involved:
+## Steps:
 
 ### -Create S3 Bucket from AWS Management Console
 - Navigate to the “AWS Management Console” page, type “S3” in the “Find Services” box and then select “S3”
