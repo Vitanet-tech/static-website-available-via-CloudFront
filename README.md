@@ -82,3 +82,8 @@ aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive
   ```
 Note - Remember, as soon as your CloudFront distribution is Deployed, it attaches to S3 and starts caching the S3 pages. CloudFront may take 10-30 minutes (or more) to cache the S3 page. Once the caching is complete, the CloudFront domain name URL will stop redirecting to the S3 object URL.
   ```
+
+### - Access Website in Web Browser
+  
+  - Open a web browser like Google Chrome, and paste the copied CloudFront domain name (such as, d24o2er5d461h3.cloudfront.net) without appending /index.html at the end. The CloudFront domain name should show you the content of the default home-page, as shown below:
+  ![image](https://user-images.githubusercontent.com/99427790/225042230-65a367e8-849f-4244-9890-4d468f6fdbff.png)
