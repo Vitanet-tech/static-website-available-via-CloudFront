@@ -17,7 +17,7 @@ This repository contains screenshot on static website hosting deployed on AWS S3
 - Once the bucket is open to its contents, click the “Upload” button.
 - Click the "Add files" and “Add folder” button, and upload the website code folder content from your local computer to the S3 bucket.
   To upload through AWS CLI
-  Verify the AWS CLI configuration. If not configured already, use:
+  Verify the AWS CLI configuration. If configured already, use:
   - aws configure list
   - aws configure 
   - aws configure set aws_session_token "<TOKEN>" --profile default" 
