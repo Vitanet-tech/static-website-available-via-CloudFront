@@ -23,7 +23,7 @@ This repository contains screenshot on static website hosting deployed on AWS S3
   - aws configure set aws_session_token "<TOKEN>" --profile default" 
   
   Upload files
- ``` # Create a PUBLIC bucket in the S3, and verify locally as 
+    ``` # Create a PUBLIC bucket in the S3, and verify locally as 
 aws s3api list-buckets 
 # Download and unzip the udacity-starter-website.zip 
 cd udacity-starter-website 
@@ -41,7 +41,8 @@ aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive ```
   - The “Bucket Policy” section shows it is empty. Click on the Edit button.
     Empty bucket policy. Check this policy again after setting up the CloudFront distribution
   - Enter the following bucket policy replacing your-website with the name of your bucket and click “Save”.
-  ``` {
+  
+  ```{
   "Version":"2012-10-17",
   "Statement":[
     {
@@ -52,7 +53,7 @@ aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive ```
       "Resource":["arn:aws:s3:::your-website/*"]
     }
   ]
-} ```
+}```
   
   
   
