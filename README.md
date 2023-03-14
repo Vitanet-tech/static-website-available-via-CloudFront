@@ -13,6 +13,7 @@ This repository contains screenshot on static website hosting deployed on AWS S3
 - Click “Next” and click “Create bucket”.
 - Once the bucket is created, click on the name of the bucket to open the bucket to the contents.
 
+
 ### -Upload files to S3 Bucket
 - Once the bucket is open to its contents, click the “Upload” button.
 - Click the "Add files" and “Add folder” button, and upload the website code folder content from your local computer to the S3 bucket.
