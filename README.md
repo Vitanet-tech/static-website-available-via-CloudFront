@@ -86,4 +86,4 @@ Note - Remember, as soon as your CloudFront distribution is Deployed, it attache
 ### - Access Website in Web Browser
   
   - Open a web browser like Google Chrome, and paste the copied CloudFront domain name (such as, d24o2er5d461h3.cloudfront.net) without appending /index.html at the end. The CloudFront domain name should show you the content of the default home-page, as shown below:
-  ![image](https://user-images.githubusercontent.com/99427790/225042230-65a367e8-849f-4244-9890-4d468f6fdbff.png)
+  <img width="937" alt="123" src="https://user-images.githubusercontent.com/99427790/225043213-a2ad3384-6aa2-406c-a908-e12c65cc1bcc.PNG">
