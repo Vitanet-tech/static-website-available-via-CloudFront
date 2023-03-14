@@ -57,9 +57,16 @@ aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive
   ]
 }
   ```
+- You will see warnings about making your bucket public, but this step is required for static website hosting.  
+  
+### -Configure S3 Bucket  
+- Go to the Properties tab and then scroll down to edit the Static website hosting section.
+- Click on the “Edit” button to see the Edit static website hosting screen. Now, enable the Static website hosting, and provide the default home page and error page for your website.
+  ![image](https://user-images.githubusercontent.com/99427790/225034314-59dfc892-8bbc-4662-b038-fc883c657e69.png)
 
-  
-  
-  
+  - For both “Index document” and “Error document”, enter “index.html” and click “Save”. After successfully saving the settings, check the Static website hosting section again under the Properties tab. You must now be able to view the website endpoint as shown below:
+  ![image](https://user-images.githubusercontent.com/99427790/225034123-ef1503fc-9a79-4a53-ae71-862126d45425.png)
+
+  Copy the website endpoint for future use
   
   
