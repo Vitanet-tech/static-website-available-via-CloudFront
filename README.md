@@ -2,7 +2,7 @@
 
 This repository contains screenshot on static website hosting deployed on AWS S3 and served via cloudfront, for udacity project.
 
-#### The sample site is live at github page https://vitanet-tech.github.io/static-website-available-via-CloudFront/
+#### The site sample is live at github page https://vitanet-tech.github.io/static-website-available-via-CloudFront/
 
 ## Steps:
 
