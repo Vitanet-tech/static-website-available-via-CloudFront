@@ -13,6 +13,7 @@ This repository contains screenshot on static website hosting deployed on AWS S3
 - Click “Next” and click “Create bucket”.
 - Once the bucket is created, click on the name of the bucket to open the bucket to the contents.
 
+
 ### -Upload files to S3 Bucket
 - Once the bucket is open to its contents, click the “Upload” button.
 - Click the "Add files" and “Add folder” button, and upload the website code folder content from your local computer to the S3 bucket.
@@ -36,7 +37,7 @@ aws s3 cp vendor/ s3://my-bucket-202203081/vendor/ --recursive
 aws s3 cp css/ s3://my-bucket-202203081/css/ --recursive 
 aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive 
 ```
-  
+
 ### -Secure Bucket via IAM
   - Click on the “Permissions” tab.
     Go to the Permissions tab. See that the bucket allows public access for hosting.
@@ -59,11 +60,13 @@ aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive
   ```
 - You will see warnings about making your bucket public, but this step is required for static website hosting.  
   
+  
 ### -Configure S3 Bucket  
 - Go to the Properties tab and then scroll down to edit the Static website hosting section.
 - Click on the “Edit” button to see the Edit static website hosting screen. Now, enable the Static website hosting, and provide the default home page and error page for your website.
   - For both “Index document” and “Error document”, enter “index.html” and click “Save”. After successfully saving the settings, check the Static website hosting section again under the Properties tab. You must now be able to view the website endpoint as shown below:
   Copy the website endpoint for future use
+
 
 ### - Distribute Website via CloudFront
 - Select “Services” from the top left corner and enter “cloud front” in the “Find a service by name or feature” text box and select “CloudFront”.
