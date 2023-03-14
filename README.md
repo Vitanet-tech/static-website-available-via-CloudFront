@@ -23,7 +23,8 @@ This repository contains screenshot on static website hosting deployed on AWS S3
   - aws configure set aws_session_token "<TOKEN>" --profile default" 
   
   Upload files with this code
-  ``` # Create a PUBLIC bucket in the S3, and verify locally as 
+ ``` 
+# Create a PUBLIC bucket in the S3, and verify locally as 
 aws s3api list-buckets 
 # Download and unzip the udacity-starter-website.zip 
 cd udacity-starter-website 
@@ -33,7 +34,8 @@ aws s3api put-object --bucket my-bucket-202203081 --key index.html --body index.
 # Copy over folders from local to S3 
 aws s3 cp vendor/ s3://my-bucket-202203081/vendor/ --recursive 
 aws s3 cp css/ s3://my-bucket-202203081/css/ --recursive 
-aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive ```
+aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive 
+```
   
 ### Secure Bucket via IAM
   - Click on the “Permissions” tab.
