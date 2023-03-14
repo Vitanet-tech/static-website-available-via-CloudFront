@@ -62,11 +62,23 @@ aws s3 cp img/ s3://my-bucket-202203081/img/ --recursive
 ### -Configure S3 Bucket  
 - Go to the Properties tab and then scroll down to edit the Static website hosting section.
 - Click on the “Edit” button to see the Edit static website hosting screen. Now, enable the Static website hosting, and provide the default home page and error page for your website.
-  ![image](https://user-images.githubusercontent.com/99427790/225034314-59dfc892-8bbc-4662-b038-fc883c657e69.png)
-
   - For both “Index document” and “Error document”, enter “index.html” and click “Save”. After successfully saving the settings, check the Static website hosting section again under the Properties tab. You must now be able to view the website endpoint as shown below:
-  ![image](https://user-images.githubusercontent.com/99427790/225034123-ef1503fc-9a79-4a53-ae71-862126d45425.png)
-
   Copy the website endpoint for future use
+
+### - Distribute Website via CloudFront
+- Select “Services” from the top left corner and enter “cloud front” in the “Find a service by name or feature” text box and select “CloudFront”.
+- From the CloudFront dashboard, click “Create Distribution”.
+- For “Select a delivery method for your content”, click “Get Started”.
+- Use the following details to create a distribution:
   
-  
+  ![image](https://user-images.githubusercontent.com/99427790/225037357-9b8918f7-6acf-4816-a045-bb6857755d7f.png)
+      Configurations - Origin details
+      
+  ![image](https://user-images.githubusercontent.com/99427790/225038029-255754ac-f3e1-450e-a2ab-0886a0e5ad35.png)
+      Configurations - Cache behavior, key and origin requests
+      
+- Leave the defaults for the rest of the options, and click “Create Distribution”. It may take up to 10 minutes for the CloudFront Distribution to get created.
+- Once the status of your distribution changes from “In Progress” to “Deployed”, copy the endpoint URL for your CloudFront distribution found in the “Domain Name” column.
+  ```
+Note - Remember, as soon as your CloudFront distribution is Deployed, it attaches to S3 and starts caching the S3 pages. CloudFront may take 10-30 minutes (or more) to cache the S3 page. Once the caching is complete, the CloudFront domain name URL will stop redirecting to the S3 object URL.
+  ```
