@@ -22,8 +22,8 @@ This repository contains screenshot on static website hosting deployed on AWS S3
   - aws configure 
   - aws configure set aws_session_token "<TOKEN>" --profile default" 
   
-  Upload files
-    ``` # Create a PUBLIC bucket in the S3, and verify locally as 
+  Upload files with this code
+  ```# Create a PUBLIC bucket in the S3, and verify locally as 
 aws s3api list-buckets 
 # Download and unzip the udacity-starter-website.zip 
 cd udacity-starter-website 
